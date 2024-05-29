@@ -22,7 +22,12 @@ const Brands = () => {
           <Image src={love} alt="whishlist" width={28} height={24} />
           <div className="h-[30px] border-s border-s-gray-300"></div>
           <div className="flex flex-row items-center gap-3">
-            <Image src={bag} alt="cart" width={34} height={34} />
+            <div className="relative">
+              <Image src={bag} alt="cart" width={34} height={34} />
+              <div className="bg-[#00B207] size-[23px] rounded-full font-poppins text-sm font-medium text-white absolute top-0 -right-1 flex items-center justify-center border-2 border-white">
+                2
+              </div>
+            </div>
             <div className="hidden md:flex md:flex-col md:gap-1">
               <p className="font-poppins text-sm font-normal text-[#4D4D4D]">
                 Shopping cart:
@@ -50,7 +55,12 @@ const Brands = () => {
         <Image src={love} alt="whishlist" width={28} height={24} />
         <div className="h-[30px] border-s border-s-gray-300"></div>
         <div className="flex flex-row items-center gap-3">
-          <Image src={bag} alt="cart" width={34} height={34} />
+          <div className="relative">
+            <Image src={bag} alt="cart" width={34} height={34} />
+            <div className="bg-[#00B207] size-[23px] rounded-full font-poppins text-sm font-medium text-white absolute top-0 -right-1 flex items-center justify-center border-2 border-white">
+              2
+            </div>
+          </div>
           <div>
             <p className="font-poppins text-sm font-normal text-[#4D4D4D]">
               Shopping cart:
