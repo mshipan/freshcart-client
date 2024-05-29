@@ -1,4 +1,4 @@
-import { poppins } from "@/utils/fonts/fonts";
+import { inter, poppins } from "@/utils/fonts/fonts";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins}`}>
+      <body className={`${poppins} ${inter}`}>
         <Navbar />
         {children}
       </body>

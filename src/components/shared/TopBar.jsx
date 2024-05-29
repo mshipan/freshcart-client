@@ -5,8 +5,8 @@ import Link from "next/link";
 const TopBar = () => {
   return (
     <div className="py-3 border-b border-b-gray-300">
-      <div className="container flex-row items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="container flex-col md:flex-row items-center justify-between gap-2">
+        <div className="flex items-center gap-2 text-center md:text-left">
           <Image src={mapPin} width={15} height={16} alt="map pin" />
           <p className="font-poppins text-xs text-gray-600">
             Store Location: Shah Ali Plaza, Mirpur- 10, Dhaka - 1216,
