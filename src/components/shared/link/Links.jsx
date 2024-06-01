@@ -32,7 +32,7 @@ const Links = () => {
     <div className="relative">
       <ul className="hidden md:flex flex-row items-center gap-8 ">
         {navItems?.map((navIte) => (
-          <NavLink item={navIte} key={navIte?.title}></NavLink>
+          <NavLink item={navIte} key={navIte?.text}></NavLink>
         ))}
       </ul>
       <div>
@@ -45,7 +45,7 @@ const Links = () => {
         <div className="absolute top-11 left-0 bg-[#333333] w-40 px-6 py-4">
           <ul className="flex md:hidden flex-col items-start gap-8 ">
             {navItems?.map((navIte) => (
-              <NavLink item={navIte} key={navIte?.title}></NavLink>
+              <NavLink item={navIte} key={navIte?.text}></NavLink>
             ))}
           </ul>
         </div>
