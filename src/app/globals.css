@@ -60,3 +60,23 @@
     width: 380px;
   }
 }
+
+/* Swiper pagination classes */
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: green !important;
+  width: 30px !important;
+  height: 3px !important;
+  margin: 0 5px !important;
+  border-radius: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: darkgreen !important;
+}
