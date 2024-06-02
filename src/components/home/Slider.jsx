@@ -1,5 +1,6 @@
 "use client";
 
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -42,7 +43,7 @@ const Slider = () => {
               objectFit="cover"
               alt="Banner 1 image"
             />
-            <div className="absolute top-0 left-0 ps-14 flex flex-col items-start justify-center gap-3 md:gap-7 h-full">
+            <div className="absolute top-0 left-0 ps-8 md:ps-14 flex flex-col items-start justify-center gap-3 md:gap-7 h-full">
               <h1 className="font-poppins font-semibold text-3xl md:text-5xl text-white max-w-80">
                 Fresh & Healthy Organic Food
               </h1>
@@ -61,6 +62,7 @@ const Slider = () => {
                 <Button
                   buttonText="Shop now"
                   className="font-poppins font-semibold text-base text-[#00B207] py-4 bg-white rounded-full"
+                  icon={HiOutlineArrowNarrowRight}
                 />
               </Link>
             </div>
@@ -85,10 +87,11 @@ const Slider = () => {
                 Only Fruit & Vegetable
               </p>
               <Link href="/shop">
-                <div>
+                <div className="flex flex-row items-center gap-2">
                   <p className="font-poppins font-semibold text-base text-[#00B207]">
                     Shop Now
                   </p>
+                  <HiOutlineArrowNarrowRight className="text-[#00B207]" />
                 </div>
               </Link>
             </div>
@@ -110,10 +113,11 @@ const Slider = () => {
                 Special Products Deal of the Month
               </h1>
               <Link href="/shop">
-                <div>
+                <div className="flex flex-row items-center gap-2">
                   <p className="font-poppins font-semibold text-base text-[#00B207]">
                     Shop Now
                   </p>
+                  <HiOutlineArrowNarrowRight className="text-[#00B207]" />
                 </div>
               </Link>
             </div>

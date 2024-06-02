@@ -1,3 +1,4 @@
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
 import banner1 from "/public/images/banner1.png";
 import banner2 from "/public/images/banner2.png";
@@ -9,11 +10,11 @@ import Slider from "./Slider";
 const Banner = () => {
   return (
     <>
-      <div className="hidden md:block">
+      <div className="hidden md:hidden lg:block">
         <div className="container">
           {/* Desktop Part */}
           <div className="flex flex-row gap-6 my-6">
-            <div className="w-[1000px] h-[622px] relative">
+            <div className="lg:w-[600px] xl:w-[700px] 2xl:w-[1000px] h-[622px] relative">
               <Image
                 src={banner1}
                 layout="fill"
@@ -40,12 +41,13 @@ const Banner = () => {
                   <Button
                     buttonText="Shop now"
                     className="font-poppins font-semibold text-base text-[#00B207] py-4 bg-white rounded-full"
+                    icon={HiOutlineArrowNarrowRight}
                   />
                 </Link>
               </div>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="w-[500px] h-[300px] relative">
+              <div className="lg:w-[360px] xl:w-[460px] 2xl:w-[410px] h-[300px] relative">
                 <Image
                   src={banner2}
                   alt="Banner 2 image"
@@ -64,15 +66,16 @@ const Banner = () => {
                     Only Fruit & Vegetable
                   </p>
                   <Link href="/shop">
-                    <div>
+                    <div className="flex flex-row items-center gap-2">
                       <p className="font-poppins font-semibold text-base text-[#00B207]">
                         Shop Now
                       </p>
+                      <HiOutlineArrowNarrowRight className="text-[#00B207]" />
                     </div>
                   </Link>
                 </div>
               </div>
-              <div className="w-[500px] h-[300px] relative">
+              <div className="lg:w-[360px] xl:w-[460px] 2xl:w-[410px] h-[300px] relative">
                 <Image
                   src={banner3}
                   layout="fill"
@@ -88,10 +91,11 @@ const Banner = () => {
                     Special Products Deal of the Month
                   </h1>
                   <Link href="/shop">
-                    <div>
+                    <div className="flex flex-row items-center gap-2">
                       <p className="font-poppins font-semibold text-base text-[#00B207]">
                         Shop Now
                       </p>
+                      <HiOutlineArrowNarrowRight className="text-[#00B207]" />
                     </div>
                   </Link>
                 </div>
@@ -101,7 +105,7 @@ const Banner = () => {
           {/* Mobile part slider */}
         </div>
       </div>
-      <div className="block md:hidden w-full my-4">
+      <div className="block md:block lg:hidden w-full my-4">
         <Slider />
       </div>
     </>
