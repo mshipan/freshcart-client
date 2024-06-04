@@ -7,7 +7,7 @@ import truck from "/public/images/icons/truck.png";
 const Featured = () => {
   return (
     <div className="container">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full p-10 shadow-2xl shadow-slate-300 rounded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-4 w-full p-10 shadow-2xl shadow-slate-300 rounded-xl mb-3">
         <div className="flex flex-row items-center gap-4">
           <Image src={truck} width={40} height={40} alt="truck icon" />
           <div className="flex flex-col gap-2">

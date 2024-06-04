@@ -1,5 +1,6 @@
 import Banner from "@/components/home/Banner";
 import Featured from "@/components/home/Featured";
+import PopularCategory from "@/components/home/popularCategory/PopularCategory";
 
 export const metadata = {
   title: "Homepage | FreshCart",
@@ -11,6 +12,7 @@ const HomePage = () => {
     <div>
       <Banner />
       <Featured />
+      <PopularCategory />
     </div>
   );
 };
